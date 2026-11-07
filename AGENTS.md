@@ -19,7 +19,8 @@ HTML on <https://www.telefriuli.it/palinsesto/>.
 - **Fail loudly.** If the page structure changes and no programmes parse, exit non-zero. A
   silently empty EPG is worse than a failed cron job.
 - **Fixture-driven tests.** Save the fetched page as `tests/fixtures/palinsesto.html` and
-  test the parser against it, never against the live site. Tests: `python3 -m unittest`.
+  test the parser against it, never against the live site. Tests:
+  `python3 -m unittest discover -s tests -t .`.
 - **Commit every change.** Small, coherent commits. Never commit `tvit/` (separate upstream
   clone), `epg.xml` output, or `__pycache__`.
 

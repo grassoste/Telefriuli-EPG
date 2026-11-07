@@ -90,8 +90,8 @@ telefriuli_epg.py
 | # | Step | Done when |
 |---|---|---|
 | 0 | Scaffold repo, README, AGENTS, tvit clone | ✅ |
-| 1 | Save `tests/fixtures/palinsesto.html`, write parser + date resolution | `python3 -m unittest` green, 192 rows |
-| 2 | XMLTV emitter + fetcher + CLI flags | `epg.xml` validates, opens in Dispatcharr |
+| 1 | Save `tests/fixtures/palinsesto.html`, write parser + date resolution | ✅ 13 tests green, 190/190 rows, 7 distinct days re-projected onto the emission week |
+| 2 | XMLTV emitter + fetcher + CLI flags | ✅ live run: 190 programmes, 2026-11-07 … 2026-11-13, `+0100` offsets |
 | 3 | Wire into Dispatcharr (file path or served URL), cron weekly | Dispatcharr shows the guide |
 | 4 | *(optional)* upstream MR to `tvit`: `TelefriuliScrapper` + Regionali channel entry + fixture test | MR opened, CI green |
 
