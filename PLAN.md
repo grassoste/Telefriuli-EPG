@@ -40,8 +40,10 @@ Already known in the ecosystem, so we reuse it: iptv-org id **`Telefriuli.it`**,
 1. **Never trust the heading date as the emission date.** The page is a weekly template that is
    updated late and unevenly. Emitting the literal dates gives an EPG that is partly in the past.
 2. **Duration = next entry's start**, last entry of the day = +60 min (default, `--last-duration`).
-3. Titles are the only text available; there is no description, genre or episode data. `– subtitle`
-   becomes the XMLTV `<sub-title>`; `<desc>` stays absent rather than fake.
+3. Titles are the only text available; there is no description, genre or episode data. The row
+   label is emitted whole as `<title>` (e.g. `Documentario – 60 anni dall'Alluvione a Forni
+   Avoltri`), with no `<sub-title>`: Dispatcharr concatenates title and sub-title without a
+   separator, and the source wording is kept exactly as published.
 
 ## 3. Design
 

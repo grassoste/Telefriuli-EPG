@@ -79,9 +79,12 @@ class XmltvTest(unittest.TestCase):
         self.assertEqual(first[1], second[0])
         self.assertEqual(second[0].strftime("%H:%M"), "06:30")
 
-    def test_subtitle_split(self):
-        titles = {(title, sub) for _, _, title, sub in self.programmes}
-        self.assertIn(("News, cappuccino e brioche", "diretta"), titles)
+    def test_label_kept_whole(self):
+        self.assertIn(
+            "News, cappuccino e brioche –diretta",
+            {title for _, _, title in self.programmes},
+        )
+        self.assertNotIn("sub-title", self.xml)
 
 
 class MidnightTest(unittest.TestCase):

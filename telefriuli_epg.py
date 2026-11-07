@@ -34,7 +34,6 @@ WEEKDAYS = {
 }
 HEADING_RE = re.compile(r"^programmazione di (\w+) (\d{2})/(\d{2})/(\d{2})$", re.I)
 ROW_RE = re.compile(r"^(\d{1,2})[.:](\d{2})\s+(.+)$")
-SUBTITLE_RE = re.compile(r"\s*[–—]\s*")
 
 
 def fetch(url, timeout=20):
@@ -118,17 +117,14 @@ def build_programmes(days, last_duration=60):
                 start += timedelta(days=1)
                 extra_days += 1
             previous = start
-            parts = SUBTITLE_RE.split(label, 1)
-            title = parts[0].strip()
-            subtitle = parts[1].strip() if len(parts) > 1 else None
-            starts.append((start, title, subtitle))
-        for index, (start, title, subtitle) in enumerate(starts):
+            starts.append((start, label.strip()))
+        for index, (start, title) in enumerate(starts):
             stop = (
                 starts[index + 1][0]
                 if index + 1 < len(starts)
                 else start + timedelta(minutes=last_duration)
             )
-            programmes.append((start, stop, title, subtitle))
+            programmes.append((start, stop, title))
     return programmes
 
 
@@ -147,14 +143,12 @@ def build_xmltv(programmes, channel_id, channel_name, icon=None, generated=None)
     if icon:
         lines.append(f"    <icon src={quoteattr(icon)} />")
     lines.append("  </channel>")
-    for start, stop, title, subtitle in programmes:
+    for start, stop, title in programmes:
         lines.append(
             f'  <programme start="{_xmltv_time(start)}" stop="{_xmltv_time(stop)}" '
             f"channel={quoteattr(channel_id)}>"
         )
         lines.append(f'    <title lang="it">{escape(title)}</title>')
-        if subtitle:
-            lines.append(f'    <sub-title lang="it">{escape(subtitle)}</sub-title>')
         lines.append("  </programme>")
     lines.append("</tv>")
     return "\n".join(lines) + "\n"
