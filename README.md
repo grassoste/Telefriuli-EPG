@@ -12,6 +12,14 @@ Scaffolding + analysis. The generator is not written yet; see [PLAN.md](PLAN.md)
 
 ## Usage
 
+Dispatcharr can read the published copy directly (regenerated daily by the GitHub Action):
+
+```
+https://raw.githubusercontent.com/grassoste/Telefriuli-EPG/main/epg.xml
+```
+
+Or run it yourself:
+
 ```bash
 python3 telefriuli_epg.py                      # writes epg.xml, next 7 days
 python3 telefriuli_epg.py -o /path/epg.xml     # custom path
