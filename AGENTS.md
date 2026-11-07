@@ -35,13 +35,17 @@ PLAN.md                 # analysis of the source and the implementation plan
 
 ## Source facts (verified 2026-11-07)
 
-- Page is one `<article>`, schedule lives in Elementor tabs with ids
+- Furthest upstream source is hand-maintained: schedule lives in Elementor tabpanels with ids
   `elementor-tab-content-8271` … `8277` (Monday → Sunday).
+- **Fetch `https://www.telefriuli.it/wp-json/wp/v2/pages/494` → `content.rendered`** (same markup,
+  always current). `/palinsesto/` sits behind a URL-keyed page cache and can return last week.
 - Each tab starts with `<p><b>Programmazione di Lunedì 02/11/26</b></p>`, then one
   `<p class="MsoNormal">` per programme: `06.20` + nbsp padding + title.
-- 192 programme lines across the 7 days; every non-empty line matches `^\d{1,2}[.:]\d{2}\s+\S`.
+- 190 programme lines across the 7 days; every non-empty line matches `^\d{1,2}[.:]\d{2}\s+\S`.
 - Titles may carry a subtitle after ` –` (e.g. `News, cappuccino e brioche – diretta`).
-- **The dates in the headings are stale and inconsistent between tabs** (Mon 02/11/26 vs
-  Wed 28/10/26 in the same page). They match their weekday but not the current week.
+- **The dates in the headings are stale and inconsistent between tabs** (e.g. Wed 28/10/26 next to
+  Sat 07/11/26). They match their weekday but not the current week.
+- Channel identity already exists in the ecosystem: iptv-org id `Telefriuli.it`, logo
+  `https://i.imgur.com/He3uCs6.png`, `tvg-id="Telefriuli.it@SD"` in iptv-org `streams/it.m3u`.
 - `tvit/` upstream does not cover Telefriuli; its scrapers dispatch by
   `ChannelGroup.scrapper` → `app/Jobs/Scrappers/<Name>Scrapper.php`.
