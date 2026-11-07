@@ -47,11 +47,21 @@ Tests parse the saved fixture in `tests/fixtures/palinsesto.html`, never the liv
 
 ## How it works
 
-1. Fetch `GET /wp-json/wp/v2/pages/494` → `content.rendered` (the page itself is cached per URL
-   and can serve last week; it is the fallback).
-2. Parse the 7 Elementor tabs: `Programmazione di <weekday> DD/MM/YY` then `HH.MM  Title` rows.
-3. Re-project each day onto the coming week by weekday — the heading dates drift by weeks.
-4. Emit XMLTV: durations from the next start time, times with explicit `+0100`/`+0200`.
+Two sources, merged:
+
+1. **`/palinsesto/`** (via `GET /wp-json/wp/v2/pages/494` → `content.rendered`) — the weekly
+   plan, 7 days, but hand-typed and often a week behind. The page itself is cached per URL and
+   can serve last week; it is only the fallback.
+2. **`/streaming/`** — the playout log behind the live player: a dated day guide with
+   minute-accurate starts (`01:25 FOCUS ALLUVIONE FORNI AVOLTRI`) and an "Ora in Onda" /
+   "Successivo" widget. It only covers today and part of tomorrow, but it is what is really airing.
+
+The live log wins for every day it covers; the weekly page fills the remaining days. Then:
+
+3. Each day is re-projected onto the coming week by weekday — the weekly page's heading dates
+   drift by weeks.
+4. XMLTV is emitted: durations from the next start time, times with explicit `+0100`/`+0200`.
+   Rows are sorted by time, since the page occasionally lists one out of order.
 
 ## Requirements
 

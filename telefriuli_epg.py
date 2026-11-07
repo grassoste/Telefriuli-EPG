@@ -20,8 +20,12 @@ from zoneinfo import ZoneInfo
 ROME = ZoneInfo("Europe/Rome")
 REST_URL = "https://www.telefriuli.it/wp-json/wp/v2/pages/494"
 PAGE_URL = "https://www.telefriuli.it/palinsesto/"
+STREAMING_URL = "https://www.telefriuli.it/streaming/"
 HORIZON = 7
 MIN_PROGRAMMES = 50
+MIN_STREAM_DAY = (
+    10  # the live log builds forward; below this a day is not worth replacing
+)
 
 WEEKDAYS = {
     "lunedì": 0,
@@ -32,8 +36,31 @@ WEEKDAYS = {
     "sabato": 5,
     "domenica": 6,
 }
+MONTHS = {
+    "gennaio": 1,
+    "febbraio": 2,
+    "marzo": 3,
+    "aprile": 4,
+    "maggio": 5,
+    "giugno": 6,
+    "luglio": 7,
+    "agosto": 8,
+    "settembre": 9,
+    "ottobre": 10,
+    "novembre": 11,
+    "dicembre": 12,
+}
 HEADING_RE = re.compile(r"^programmazione di (\w+) (\d{2})/(\d{2})/(\d{2})$", re.I)
 ROW_RE = re.compile(r"^(\d{1,2})[.:](\d{2})\s+(.+)$")
+GUIDE_DAY_RE = re.compile(
+    r'<h3>(\w+) (\d{1,2}) (\w+) (\d{4})</h3>\s*<ul class="programme-day">(.*?)</ul>',
+    re.S,
+)
+GUIDE_ITEM_RE = re.compile(
+    r'<li class="programme[^"]*">\s*<div class="time">(\d{1,2}):(\d{2})</div>'
+    r'.*?<div class="title">(.*?)</div>',
+    re.S,
+)
 
 
 def fetch(url, timeout=20):
@@ -89,6 +116,39 @@ def parse_schedule(html):
     return [day for day in days if day["entries"]]
 
 
+def parse_streaming(html):
+    """The live page's playout log: dated, minute-accurate, but only the next day or two."""
+    days = []
+    for weekday_name, day, month_name, year, body in GUIDE_DAY_RE.findall(html):
+        weekday = WEEKDAYS.get(weekday_name.lower())
+        month = MONTHS.get(month_name.lower())
+        if weekday is None or month is None:
+            continue
+        entries = [
+            (int(hour), int(minute), _text(title))
+            for hour, minute, title in GUIDE_ITEM_RE.findall(body)
+        ]
+        entries = [
+            item for item in entries if item[0] < 24 and item[1] < 60 and item[2]
+        ]
+        if len(entries) >= MIN_STREAM_DAY:
+            days.append(
+                {
+                    "weekday": weekday,
+                    "date": date(int(year), month, int(day)),
+                    "entries": entries,
+                }
+            )
+    return days
+
+
+def merge_days(preferred, fallback):
+    """The live log wins for the days it covers; the weekly page fills the rest."""
+    merged = {day["weekday"]: day for day in fallback}
+    merged.update({day["weekday"]: day for day in preferred})
+    return [merged[weekday] for weekday in sorted(merged)]
+
+
 def resolve_dates(days, today, horizon=HORIZON):
     """Put every day inside [today, today+horizon), keeping the weekday the tab claims."""
     resolved = []
@@ -105,19 +165,18 @@ def resolve_dates(days, today, horizon=HORIZON):
 
 
 def build_programmes(days, last_duration=60):
-    """-> [(start, stop, title, subtitle)], durations from the next start time in the day."""
+    """-> [(start, stop, title)], durations from the next start time in the day."""
     programmes = []
     for day in days:
-        starts, previous, extra_days = [], None, 0
-        for hour, minute, label in day["entries"]:
-            start = datetime.combine(
-                day["date"], dtime(hour, minute), tzinfo=ROME
-            ) + timedelta(days=extra_days)
-            if previous and start < previous:  # a 00:xx row listed after 23:xx
-                start += timedelta(days=1)
-                extra_days += 1
-            previous = start
-            starts.append((start, label.strip()))
+        # The page sometimes lists a row out of order (11.15 then 10.45). A timetable is
+        # chronological, and one stray row must not shift the rest of the day by 24 hours.
+        starts = [
+            (
+                datetime.combine(day["date"], dtime(hour, minute), tzinfo=ROME),
+                label.strip(),
+            )
+            for hour, minute, label in sorted(day["entries"])
+        ]
         for index, (start, title) in enumerate(starts):
             stop = (
                 starts[index + 1][0]
@@ -197,6 +256,20 @@ def main(argv=None):
         raise SystemExit(
             f"error: parsed only {total} programmes — has the page structure changed?"
         )
+
+    if not args.input:
+        try:
+            live = parse_streaming(fetch(f"{STREAMING_URL}?v={int(time.time())}"))
+        except Exception as err:  # noqa: BLE001 - the weekly page still works without it
+            print(f"warning: live guide unavailable ({err})", file=sys.stderr)
+            live = []
+        if live:
+            print(
+                f"live guide overrides {len(live)} day(s): "
+                + ", ".join(str(day["date"]) for day in live),
+                file=sys.stderr,
+            )
+            days = merge_days(live, days)
 
     today = datetime.now(ROME).date()
     if max(day["date"] for day in days) < today:

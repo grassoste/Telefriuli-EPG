@@ -40,6 +40,12 @@ PLAN.md                 # analysis of the source and the implementation plan
   `elementor-tab-content-8271` … `8277` (Monday → Sunday).
 - **Fetch `https://www.telefriuli.it/wp-json/wp/v2/pages/494` → `content.rendered`** (same markup,
   always current). `/palinsesto/` sits behind a URL-keyed page cache and can return last week.
+- **`https://www.telefriuli.it/streaming/`** carries the playout log: `<h3>Domenica 8 Novembre
+  2026</h3>` + `<ul class="programme-day">` with `<li class="programme">` / `.time` / `.title`.
+  Minute-accurate, real broadcast names (`FOCUS ALLUVIONE FORNI AVOLTRI`), today + part of
+  tomorrow only. It wins over the weekly page for the days it covers.
+- The weekly page sometimes lists a row out of order (Thursday: `11.15` then `10.45`); rows are
+  sorted before durations are computed, or one stray row shifts the rest of the day by 24 hours.
 - Each tab starts with `<p><b>Programmazione di Lunedì 02/11/26</b></p>`, then one
   `<p class="MsoNormal">` per programme: `06.20` + nbsp padding + title.
 - 190 programme lines across the 7 days; every non-empty line matches `^\d{1,2}[.:]\d{2}\s+\S`.
