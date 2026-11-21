@@ -1,221 +1,140 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tv generator-info-name="telefriuli_epg" date="20261120">
+<tv generator-info-name="telefriuli_epg" date="20261121">
   <channel id="Telefriuli.it">
     <display-name lang="it">Telefriuli</display-name>
     <icon src="https://i.imgur.com/He3uCs6.png" />
   </channel>
-  <programme start="20261120130400 +0100" stop="20261120132100 +0100" channel="Telefriuli.it">
-    <title lang="it">A VOI LA LINEA</title>
+  <programme start="20261121124400 +0100" stop="20261121125900 +0100" channel="Telefriuli.it">
+    <title lang="it">L'ALPINO</title>
   </programme>
-  <programme start="20261120132100 +0100" stop="20261120133100 +0100" channel="Telefriuli.it">
-    <title lang="it">VAGHE FRONTIERE</title>
+  <programme start="20261121125900 +0100" stop="20261121132800 +0100" channel="Telefriuli.it">
+    <title lang="it">Settimana Friuli</title>
   </programme>
-  <programme start="20261120133100 +0100" stop="20261120134600 +0100" channel="Telefriuli.it">
+  <programme start="20261121132800 +0100" stop="20261121134200 +0100" channel="Telefriuli.it">
     <title lang="it">TELEGIORNALE FVG</title>
   </programme>
-  <programme start="20261120134600 +0100" stop="20261120141800 +0100" channel="Telefriuli.it">
-    <title lang="it">A VOI LA LINEA</title>
+  <programme start="20261121134200 +0100" stop="20261121141400 +0100" channel="Telefriuli.it">
+    <title lang="it">SCREENSHOT</title>
   </programme>
-  <programme start="20261120141800 +0100" stop="20261120143500 +0100" channel="Telefriuli.it">
-    <title lang="it">TELEGIORNALE FVG</title>
+  <programme start="20261121141400 +0100" stop="20261121142500 +0100" channel="Telefriuli.it">
+    <title lang="it">ISONZO NEWS</title>
   </programme>
-  <programme start="20261120143500 +0100" stop="20261120152600 +0100" channel="Telefriuli.it">
-    <title lang="it">FOCUS VERSA E BRAZZANO</title>
+  <programme start="20261121142500 +0100" stop="20261121161900 +0100" channel="Telefriuli.it">
+    <title lang="it">PARTITA DILETTANTI</title>
   </programme>
-  <programme start="20261120152600 +0100" stop="20261120155500 +0100" channel="Telefriuli.it">
-    <title lang="it">BIANCONERI A CANESTRO</title>
-  </programme>
-  <programme start="20261120155500 +0100" stop="20261120160500 +0100" channel="Telefriuli.it">
+  <programme start="20261121161900 +0100" stop="20261121163000 +0100" channel="Telefriuli.it">
     <title lang="it">ITALPRESS LAVORO WELFARE</title>
   </programme>
-  <programme start="20261120160500 +0100" stop="20261120161100 +0100" channel="Telefriuli.it">
-    <title lang="it">Horaci L'Inuit - La cjane di pescje</title>
+  <programme start="20261121163000 +0100" stop="20261121164400 +0100" channel="Telefriuli.it">
+    <title lang="it">TELEGIORNALE FVG</title>
   </programme>
-  <programme start="20261120161100 +0100" stop="20261120161700 +0100" channel="Telefriuli.it">
-    <title lang="it">Horaci L'Inuit - Competizion disoneste</title>
-  </programme>
-  <programme start="20261120161700 +0100" stop="20261120162300 +0100" channel="Telefriuli.it">
-    <title lang="it">Horaci L'Inuit - I fidelins de discordie</title>
-  </programme>
-  <programme start="20261120162300 +0100" stop="20261120162800 +0100" channel="Telefriuli.it">
-    <title lang="it">Numaruts - Cum ti tocje a ti!</title>
-  </programme>
-  <programme start="20261120162800 +0100" stop="20261120162900 +0100" channel="Telefriuli.it">
-    <title lang="it">Numaruts - Tegninus di voli</title>
-  </programme>
-  <programme start="20261120162900 +0100" stop="20261120164600 +0100" channel="Telefriuli.it">
-    <title lang="it">TG FLASH</title>
-  </programme>
-  <programme start="20261120164600 +0100" stop="20261120170200 +0100" channel="Telefriuli.it">
-    <title lang="it">START</title>
-  </programme>
-  <programme start="20261120170200 +0100" stop="20261120173200 +0100" channel="Telefriuli.it">
-    <title lang="it">MAMAN - Program par fruts</title>
-  </programme>
-  <programme start="20261120173200 +0100" stop="20261120174700 +0100" channel="Telefriuli.it">
-    <title lang="it">TG FLASH</title>
-  </programme>
-  <programme start="20261120174700 +0100" stop="20261120180200 +0100" channel="Telefriuli.it">
-    <title lang="it">L'ALPINO</title>
-  </programme>
-  <programme start="20261120180200 +0100" stop="20261120181700 +0100" channel="Telefriuli.it">
-    <title lang="it">ITALPRESS</title>
-  </programme>
-  <programme start="20261120181700 +0100" stop="20261120183100 +0100" channel="Telefriuli.it">
+  <programme start="20261121164400 +0100" stop="20261121165900 +0100" channel="Telefriuli.it">
     <title lang="it">RUGBY MAGAZINE</title>
   </programme>
-  <programme start="20261120183100 +0100" stop="20261120190000 +0100" channel="Telefriuli.it">
+  <programme start="20261121165900 +0100" stop="20261121172900 +0100" channel="Telefriuli.it">
+    <title lang="it">SCREENSHOT</title>
+  </programme>
+  <programme start="20261121172900 +0100" stop="20261121175800 +0100" channel="Telefriuli.it">
     <title lang="it">MAMAN - Program par fruts</title>
   </programme>
-  <programme start="20261120190000 +0100" stop="20261120192900 +0100" channel="Telefriuli.it">
+  <programme start="20261121175800 +0100" stop="20261121183100 +0100" channel="Telefriuli.it">
+    <title lang="it">Settimana Friuli</title>
+  </programme>
+  <programme start="20261121183100 +0100" stop="20261121184100 +0100" channel="Telefriuli.it">
+    <title lang="it">ITALPRESS AGRIFOOD</title>
+  </programme>
+  <programme start="20261121184100 +0100" stop="20261121185400 +0100" channel="Telefriuli.it">
+    <title lang="it">START</title>
+  </programme>
+  <programme start="20261121185400 +0100" stop="20261121185900 +0100" channel="Telefriuli.it">
+    <title lang="it">INTERVALLO_2MIN16_SENTIERI_01</title>
+  </programme>
+  <programme start="20261121185900 +0100" stop="20261121193000 +0100" channel="Telefriuli.it">
     <title lang="it">TELEGIORNALE FVG</title>
   </programme>
-  <programme start="20261120192900 +0100" stop="20261120193500 +0100" channel="Telefriuli.it">
-    <title lang="it">SPORT FVG</title>
+  <programme start="20261121193000 +0100" stop="20261121194800 +0100" channel="Telefriuli.it">
+    <title lang="it">LE PERAULE DE DOMENIE</title>
   </programme>
-  <programme start="20261120193500 +0100" stop="20261120194300 +0100" channel="Telefriuli.it">
-    <title lang="it">METEO</title>
+  <programme start="20261121194800 +0100" stop="20261121200600 +0100" channel="Telefriuli.it">
+    <title lang="it">NOI DOLOMITI</title>
   </programme>
-  <programme start="20261120194300 +0100" stop="20261120201400 +0100" channel="Telefriuli.it">
-    <title lang="it">SCREENSHOT</title>
+  <programme start="20261121200600 +0100" stop="20261121203700 +0100" channel="Telefriuli.it">
+    <title lang="it">EFFEMOTORI</title>
   </programme>
-  <programme start="20261120201400 +0100" stop="20261120204000 +0100" channel="Telefriuli.it">
+  <programme start="20261121203700 +0100" stop="20261121204600 +0100" channel="Telefriuli.it">
+    <title lang="it">ITALPRESS LAVORO WELFARE</title>
+  </programme>
+  <programme start="20261121204600 +0100" stop="20261121204900 +0100" channel="Telefriuli.it">
+    <title lang="it">ITALPRESS LA SALUTE VIEN MANGIANDO</title>
+  </programme>
+  <programme start="20261121204900 +0100" stop="20261121205900 +0100" channel="Telefriuli.it">
+    <title lang="it">ITALPRESS SALUTE MAGAZINE</title>
+  </programme>
+  <programme start="20261121205900 +0100" stop="20261121215600 +0100" channel="Telefriuli.it">
+    <title lang="it">IN PRIMO BANCO</title>
+  </programme>
+  <programme start="20261121215600 +0100" stop="20261121224900 +0100" channel="Telefriuli.it">
+    <title lang="it">BASKETT 1P GENERICO</title>
+  </programme>
+  <programme start="20261121224900 +0100" stop="20261121234300 +0100" channel="Telefriuli.it">
+    <title lang="it">BASKET 2P GENERICO</title>
+  </programme>
+  <programme start="20261121234300 +0100" stop="20261121235100 +0100" channel="Telefriuli.it">
+    <title lang="it">ITALPRESS TG UNIVERSITA</title>
+  </programme>
+  <programme start="20261121235100 +0100" stop="20261122005100 +0100" channel="Telefriuli.it">
     <title lang="it">TELEGIORNALE FVG</title>
   </programme>
-  <programme start="20261120204000 +0100" stop="20261120205900 +0100" channel="Telefriuli.it">
-    <title lang="it">GNOVIS</title>
+  <programme start="20261122001800 +0100" stop="20261122004300 +0100" channel="Telefriuli.it">
+    <title lang="it">EFFEMOTORI</title>
   </programme>
-  <programme start="20261120205900 +0100" stop="20261120223100 +0100" channel="Telefriuli.it">
-    <title lang="it">PICCOLI AMICI GRANDI STORIE</title>
+  <programme start="20261122004300 +0100" stop="20261122012700 +0100" channel="Telefriuli.it">
+    <title lang="it">IN PRIMO BANCO</title>
   </programme>
-  <programme start="20261120223100 +0100" stop="20261120230100 +0100" channel="Telefriuli.it">
-    <title lang="it">ANTEPRIMA GOAL FVG</title>
+  <programme start="20261122012700 +0100" stop="20261122015400 +0100" channel="Telefriuli.it">
+    <title lang="it">TELEGIORNALE FVG</title>
   </programme>
-  <programme start="20261120230100 +0100" stop="20261120231600 +0100" channel="Telefriuli.it">
+  <programme start="20261122015400 +0100" stop="20261122021900 +0100" channel="Telefriuli.it">
+    <title lang="it">Settimana Friuli</title>
+  </programme>
+  <programme start="20261122021900 +0100" stop="20261122023300 +0100" channel="Telefriuli.it">
+    <title lang="it">ISONZO NEWS</title>
+  </programme>
+  <programme start="20261122023300 +0100" stop="20261122025800 +0100" channel="Telefriuli.it">
+    <title lang="it">EFFEMOTORI</title>
+  </programme>
+  <programme start="20261122025800 +0100" stop="20261122032500 +0100" channel="Telefriuli.it">
+    <title lang="it">TELEGIORNALE FVG</title>
+  </programme>
+  <programme start="20261122032500 +0100" stop="20261122035000 +0100" channel="Telefriuli.it">
+    <title lang="it">Settimana Friuli</title>
+  </programme>
+  <programme start="20261122035000 +0100" stop="20261122040300 +0100" channel="Telefriuli.it">
+    <title lang="it">ISONZO NEWS</title>
+  </programme>
+  <programme start="20261122040300 +0100" stop="20261122041500 +0100" channel="Telefriuli.it">
     <title lang="it">L'ALPINO</title>
   </programme>
-  <programme start="20261120231600 +0100" stop="20261120235000 +0100" channel="Telefriuli.it">
-    <title lang="it">MESSEDE CHE SI TACHE</title>
+  <programme start="20261122041500 +0100" stop="20261122044000 +0100" channel="Telefriuli.it">
+    <title lang="it">EFFEMOTORI</title>
   </programme>
-  <programme start="20261120235000 +0100" stop="20261121005000 +0100" channel="Telefriuli.it">
+  <programme start="20261122044000 +0100" stop="20261122050700 +0100" channel="Telefriuli.it">
     <title lang="it">TELEGIORNALE FVG</title>
   </programme>
-  <programme start="20261121001700 +0100" stop="20261121002300 +0100" channel="Telefriuli.it">
-    <title lang="it">SPORT FVG</title>
-  </programme>
-  <programme start="20261121002300 +0100" stop="20261121002800 +0100" channel="Telefriuli.it">
-    <title lang="it">METEO</title>
-  </programme>
-  <programme start="20261121002800 +0100" stop="20261121005200 +0100" channel="Telefriuli.it">
-    <title lang="it">SCREENSHOT</title>
-  </programme>
-  <programme start="20261121005200 +0100" stop="20261121021600 +0100" channel="Telefriuli.it">
-    <title lang="it">PICCOLI AMICI GRANDI STORIE</title>
-  </programme>
-  <programme start="20261121021600 +0100" stop="20261121024300 +0100" channel="Telefriuli.it">
-    <title lang="it">TELEGIORNALE FVG</title>
-  </programme>
-  <programme start="20261121024300 +0100" stop="20261121030900 +0100" channel="Telefriuli.it">
-    <title lang="it">A VOI LA LINEA</title>
-  </programme>
-  <programme start="20261121030900 +0100" stop="20261121033300 +0100" channel="Telefriuli.it">
-    <title lang="it">SCREENSHOT</title>
-  </programme>
-  <programme start="20261121033300 +0100" stop="20261121040000 +0100" channel="Telefriuli.it">
-    <title lang="it">TELEGIORNALE FVG</title>
-  </programme>
-  <programme start="20261121040000 +0100" stop="20261121042600 +0100" channel="Telefriuli.it">
-    <title lang="it">A VOI LA LINEA</title>
-  </programme>
-  <programme start="20261121042600 +0100" stop="20261121045000 +0100" channel="Telefriuli.it">
-    <title lang="it">SCREENSHOT</title>
-  </programme>
-  <programme start="20261121045000 +0100" stop="20261121051700 +0100" channel="Telefriuli.it">
-    <title lang="it">TELEGIORNALE FVG</title>
-  </programme>
-  <programme start="20261121051700 +0100" stop="20261121054300 +0100" channel="Telefriuli.it">
-    <title lang="it">A VOI LA LINEA</title>
-  </programme>
-  <programme start="20261121054300 +0100" stop="20261121064300 +0100" channel="Telefriuli.it">
-    <title lang="it">SCREENSHOT</title>
-  </programme>
-  <programme start="20261122062000 +0100" stop="20261122063000 +0100" channel="Telefriuli.it">
-    <title lang="it">Un pinsir par vuè</title>
-  </programme>
-  <programme start="20261122063000 +0100" stop="20261122070000 +0100" channel="Telefriuli.it">
-    <title lang="it">Telegiornale FVG</title>
-  </programme>
-  <programme start="20261122070000 +0100" stop="20261122073000 +0100" channel="Telefriuli.it">
-    <title lang="it">Maman! Program par fruts</title>
-  </programme>
-  <programme start="20261122073000 +0100" stop="20261122080000 +0100" channel="Telefriuli.it">
+  <programme start="20261122050700 +0100" stop="20261122053200 +0100" channel="Telefriuli.it">
     <title lang="it">Settimana Friuli</title>
   </programme>
-  <programme start="20261122080000 +0100" stop="20261122083000 +0100" channel="Telefriuli.it">
-    <title lang="it">Telefruts – cartoni animati</title>
+  <programme start="20261122053200 +0100" stop="20261122055700 +0100" channel="Telefriuli.it">
+    <title lang="it">EFFEMOTORI</title>
   </programme>
-  <programme start="20261122083000 +0100" stop="20261122093000 +0100" channel="Telefriuli.it">
-    <title lang="it">Le Peraule de domenie</title>
-  </programme>
-  <programme start="20261122093000 +0100" stop="20261122103000 +0100" channel="Telefriuli.it">
-    <title lang="it">Settimana Friuli</title>
-  </programme>
-  <programme start="20261122103000 +0100" stop="20261122113000 +0100" channel="Telefriuli.it">
-    <title lang="it">Santa Messa dal Duomo di Udine –diretta</title>
-  </programme>
-  <programme start="20261122113000 +0100" stop="20261122123000 +0100" channel="Telefriuli.it">
-    <title lang="it">L’alpino</title>
-  </programme>
-  <programme start="20261122123000 +0100" stop="20261122124500 +0100" channel="Telefriuli.it">
-    <title lang="it">Telegiornale FVG – diretta</title>
-  </programme>
-  <programme start="20261122124500 +0100" stop="20261122130000 +0100" channel="Telefriuli.it">
-    <title lang="it">Noi Dolomiti Unesco</title>
-  </programme>
-  <programme start="20261122130000 +0100" stop="20261122133000 +0100" channel="Telefriuli.it">
-    <title lang="it">Maman! Program par fruts</title>
-  </programme>
-  <programme start="20261122133000 +0100" stop="20261122134500 +0100" channel="Telefriuli.it">
-    <title lang="it">Telegiornale FVG</title>
-  </programme>
-  <programme start="20261122134500 +0100" stop="20261122141500 +0100" channel="Telefriuli.it">
-    <title lang="it">Effemotori</title>
-  </programme>
-  <programme start="20261122141500 +0100" stop="20261122142500 +0100" channel="Telefriuli.it">
-    <title lang="it">Start</title>
-  </programme>
-  <programme start="20261122142500 +0100" stop="20261122170000 +0100" channel="Telefriuli.it">
-    <title lang="it">Partita Dilettanti – FontanafreddaVs Tolmezzo – diretta</title>
-  </programme>
-  <programme start="20261122170000 +0100" stop="20261122190000 +0100" channel="Telefriuli.it">
-    <title lang="it">Piccoli Amici, Grandi Storie</title>
-  </programme>
-  <programme start="20261122190000 +0100" stop="20261122191500 +0100" channel="Telefriuli.it">
-    <title lang="it">Telegiornale FVG – diretta</title>
-  </programme>
-  <programme start="20261122191500 +0100" stop="20261122193000 +0100" channel="Telefriuli.it">
-    <title lang="it">Sport FVG – diretta</title>
-  </programme>
-  <programme start="20261122193000 +0100" stop="20261122205500 +0100" channel="Telefriuli.it">
-    <title lang="it">Goal FVG – diretta</title>
-  </programme>
-  <programme start="20261122205500 +0100" stop="20261122220000 +0100" channel="Telefriuli.it">
-    <title lang="it">Replay – diretta</title>
-  </programme>
-  <programme start="20261122220000 +0100" stop="20261122233000 +0100" channel="Telefriuli.it">
-    <title lang="it">Basket – Dole Basket Rimini VsUeb Gesteco Cividale</title>
-  </programme>
-  <programme start="20261122233000 +0100" stop="20261122234500 +0100" channel="Telefriuli.it">
-    <title lang="it">Le Peraule de domenie</title>
-  </programme>
-  <programme start="20261122234500 +0100" stop="20261123004500 +0100" channel="Telefriuli.it">
-    <title lang="it">Telegiornale FVG</title>
+  <programme start="20261122055700 +0100" stop="20261122065700 +0100" channel="Telefriuli.it">
+    <title lang="it">TELEGIORNALE FVG</title>
   </programme>
   <programme start="20261123062000 +0100" stop="20261123063000 +0100" channel="Telefriuli.it">
     <title lang="it">Un pinsir par vuè</title>
   </programme>
   <programme start="20261123063000 +0100" stop="20261123073500 +0100" channel="Telefriuli.it">
-    <title lang="it">News, cappuccino e brioche –diretta</title>
+    <title lang="it">News, cappuccino e brioche – diretta</title>
   </programme>
   <programme start="20261123073500 +0100" stop="20261123074500 +0100" channel="Telefriuli.it">
     <title lang="it">Meteo</title>
@@ -293,7 +212,7 @@
     <title lang="it">Bianconero XXL – diretta</title>
   </programme>
   <programme start="20261123220000 +0100" stop="20261123230000 +0100" channel="Telefriuli.it">
-    <title lang="it">Basket – APU Old Wild West Vs EA7Emporio Armani Olimpia Milano</title>
+    <title lang="it">Basket – Tezenis Scaligera Verona Vs APU Old Wild West Udine</title>
   </programme>
   <programme start="20261124062000 +0100" stop="20261124063000 +0100" channel="Telefriuli.it">
     <title lang="it">Un pinsir par vuè</title>
@@ -470,7 +389,7 @@
     <title lang="it">Un pinsir par vuè</title>
   </programme>
   <programme start="20261126063000 +0100" stop="20261126073000 +0100" channel="Telefriuli.it">
-    <title lang="it">New, cappuccino e brioche – diretta</title>
+    <title lang="it">New, cappuccino e brioche –diretta</title>
   </programme>
   <programme start="20261126073000 +0100" stop="20261126074500 +0100" channel="Telefriuli.it">
     <title lang="it">Meteo</title>
@@ -554,6 +473,102 @@
     <title lang="it">Vaghe Frontiere</title>
   </programme>
   <programme start="20261126234500 +0100" stop="20261127004500 +0100" channel="Telefriuli.it">
+    <title lang="it">Telegiornale FVG</title>
+  </programme>
+  <programme start="20261127062000 +0100" stop="20261127063000 +0100" channel="Telefriuli.it">
+    <title lang="it">Un pinsir par vuè</title>
+  </programme>
+  <programme start="20261127063000 +0100" stop="20261127073000 +0100" channel="Telefriuli.it">
+    <title lang="it">New, cappuccino e brioche –diretta</title>
+  </programme>
+  <programme start="20261127073000 +0100" stop="20261127074500 +0100" channel="Telefriuli.it">
+    <title lang="it">Meteo</title>
+  </programme>
+  <programme start="20261127074500 +0100" stop="20261127081500 +0100" channel="Telefriuli.it">
+    <title lang="it">A voi la linea</title>
+  </programme>
+  <programme start="20261127081500 +0100" stop="20261127083000 +0100" channel="Telefriuli.it">
+    <title lang="it">Un pinsir par vuè</title>
+  </programme>
+  <programme start="20261127083000 +0100" stop="20261127093000 +0100" channel="Telefriuli.it">
+    <title lang="it">New, cappuccino e brioche</title>
+  </programme>
+  <programme start="20261127093000 +0100" stop="20261127094500 +0100" channel="Telefriuli.it">
+    <title lang="it">Meteo</title>
+  </programme>
+  <programme start="20261127094500 +0100" stop="20261127104500 +0100" channel="Telefriuli.it">
+    <title lang="it">Focus</title>
+  </programme>
+  <programme start="20261127104500 +0100" stop="20261127111500 +0100" channel="Telefriuli.it">
+    <title lang="it">Effemotori</title>
+  </programme>
+  <programme start="20261127111500 +0100" stop="20261127120000 +0100" channel="Telefriuli.it">
+    <title lang="it">Family salute e benessere</title>
+  </programme>
+  <programme start="20261127120000 +0100" stop="20261127123000 +0100" channel="Telefriuli.it">
+    <title lang="it">Messede che si tache</title>
+  </programme>
+  <programme start="20261127123000 +0100" stop="20261127124500 +0100" channel="Telefriuli.it">
+    <title lang="it">Telegiornale FVG – diretta</title>
+  </programme>
+  <programme start="20261127124500 +0100" stop="20261127131500 +0100" channel="Telefriuli.it">
+    <title lang="it">A voi la linea – diretta</title>
+  </programme>
+  <programme start="20261127131500 +0100" stop="20261127133000 +0100" channel="Telefriuli.it">
+    <title lang="it">Vaghe frontiere</title>
+  </programme>
+  <programme start="20261127133000 +0100" stop="20261127134500 +0100" channel="Telefriuli.it">
+    <title lang="it">Telegiornale FVG</title>
+  </programme>
+  <programme start="20261127134500 +0100" stop="20261127143000 +0100" channel="Telefriuli.it">
+    <title lang="it">A voi la linea</title>
+  </programme>
+  <programme start="20261127143000 +0100" stop="20261127153000 +0100" channel="Telefriuli.it">
+    <title lang="it">Focus</title>
+  </programme>
+  <programme start="20261127153000 +0100" stop="20261127160000 +0100" channel="Telefriuli.it">
+    <title lang="it">Bianconeri a canestro</title>
+  </programme>
+  <programme start="20261127160000 +0100" stop="20261127163000 +0100" channel="Telefriuli.it">
+    <title lang="it">Telefruts – cartoni animati</title>
+  </programme>
+  <programme start="20261127163000 +0100" stop="20261127164500 +0100" channel="Telefriuli.it">
+    <title lang="it">Tg flash – diretta</title>
+  </programme>
+  <programme start="20261127164500 +0100" stop="20261127181500 +0100" channel="Telefriuli.it">
+    <title lang="it">Start</title>
+  </programme>
+  <programme start="20261127181500 +0100" stop="20261127183000 +0100" channel="Telefriuli.it">
+    <title lang="it">Rugby Magazine</title>
+  </programme>
+  <programme start="20261127183000 +0100" stop="20261127190000 +0100" channel="Telefriuli.it">
+    <title lang="it">Maman – program par fruts</title>
+  </programme>
+  <programme start="20261127190000 +0100" stop="20261127193000 +0100" channel="Telefriuli.it">
+    <title lang="it">Telegiornale FVG – diretta</title>
+  </programme>
+  <programme start="20261127193000 +0100" stop="20261127193500 +0100" channel="Telefriuli.it">
+    <title lang="it">Sport FVG – diretta</title>
+  </programme>
+  <programme start="20261127193500 +0100" stop="20261127194500 +0100" channel="Telefriuli.it">
+    <title lang="it">Meteo</title>
+  </programme>
+  <programme start="20261127194500 +0100" stop="20261127201500 +0100" channel="Telefriuli.it">
+    <title lang="it">Screenshot</title>
+  </programme>
+  <programme start="20261127201500 +0100" stop="20261127204000 +0100" channel="Telefriuli.it">
+    <title lang="it">Telegiornale FVG</title>
+  </programme>
+  <programme start="20261127204000 +0100" stop="20261127210000 +0100" channel="Telefriuli.it">
+    <title lang="it">Gnovis</title>
+  </programme>
+  <programme start="20261127210000 +0100" stop="20261127223000 +0100" channel="Telefriuli.it">
+    <title lang="it">Piccoli amici, grandi storie –diretta</title>
+  </programme>
+  <programme start="20261127223000 +0100" stop="20261127234500 +0100" channel="Telefriuli.it">
+    <title lang="it">Anteprima Goal FVG</title>
+  </programme>
+  <programme start="20261127234500 +0100" stop="20261128004500 +0100" channel="Telefriuli.it">
     <title lang="it">Telegiornale FVG</title>
   </programme>
 </tv>
